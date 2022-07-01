@@ -1,0 +1,37 @@
+div p {
+  background-color: black;
+}
+div p b {
+  color: rgb(0, 255, 64);
+}
+
+body {
+  background-color: black;
+  color: lightgrey;
+  margin: 20%;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+h1 {
+  color: lightblue;
+}
+
+#id-1 {
+  font-size: 14px;
+  background-color: #ff3333;
+}
+
+#id-2 {
+  font-size: 18px;
+  background-color: #ff6666;
+}
+
+#id-3 {
+  font-size: 22px;
+  background-color: #ff9999;
+}/*# sourceMappingURL=style.css.map */

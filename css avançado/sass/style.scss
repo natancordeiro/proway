@@ -1,0 +1,51 @@
+$cor: lightblue;
+$cor2: light + grey;
+$background: black;
+
+@mixin fundoP ($color) {
+  background-color: $color;
+}
+
+div {
+    p{
+      @include fundoP($background);
+      b{
+        color: rgb(0, 255, 64);
+      }
+    }
+}
+
+body {
+  @include fundoP($background);
+  @if ($background == black) {
+    color: #{$cor2};
+  } @else {
+    color: darkblue;
+    background-color: lightskyblue;
+  }
+
+  margin: 10%*2;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: $cor;
+
+}
+
+h1 {
+  color: $cor;
+}
+
+$corDiv: red;
+$tamanho: 10px;
+
+@for $i from 1 through 3 {
+  $nome: '#id-' + $i;
+  #{$nome} {
+    font-size: $tamanho + ($i*4);
+    background-color: lighten($corDiv, $i * 10%);
+  }
+}
+ 
